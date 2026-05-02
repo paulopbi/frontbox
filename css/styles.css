@@ -78,12 +78,14 @@ img {
 /* 2. Menu
 /**********************************/
 
-.menu-bg {
+.header {
+	padding-block: 16px;
 	background-color: var(--clr-green-light);
 }
 
-.menu {
+.header__menu {
 	display: flex;
+	gap: 24px;
 	align-items: center;
 	justify-content: space-between;
 	max-width: 960px;
@@ -91,18 +93,33 @@ img {
 	flex-wrap: wrap;
 }
 
-.menu__logo {
-	margin: 10px;
+.header__image {
+	object-fit: cover;
 }
 
-.nav__list {
+.header__links {
 	display: flex;
-	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
 }
 
-.nav__link {
-	padding: 20px 10px;
+.mobile {
+	display: none;
+	width: 24px;
+	height: 24px;
 }
+
+@media (width <= 600px) {
+	.mobile {
+		display: block;
+		cursor: pointer;
+	}
+
+	.header__links {
+		display: none;
+	}
+}
+
 /**********************************/
 /* 3. Header
 /**********************************/
