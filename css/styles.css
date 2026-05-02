@@ -23,11 +23,11 @@
 :root {
 	--ff-primary: "Nunito", Helvetica, Arial, sans-serif;
 
-	--clr-green-dark: #049a40;
-	--clr-green-light: #0bf96a;
-	--clr-pink-dark: #e10bf9;
-	--clr-pink-light: #f3a0fb;
-	--clr-white: #f5f5f5;
+	--clr-green-dark: hsl(144, 95%, 31%);
+	--clr-green-light: hsl(from var(--clr-green-dark) h s 51%);
+	--clr-pink-dark: hsl(294, 95%, 51%);
+	--clr-pink-light: hsl(295, 92%, 81%);
+	--clr-white: hsl(0, 0%, 96%);
 }
 /**********************************/
 /* 1. Estilos gerais
@@ -63,15 +63,21 @@ p {
 	padding: 0 10px;
 }
 
+img {
+	display: block;
+	max-width: 100%;
+}
+
 .section__titulo {
 	text-align: center;
 	font-size: 3rem;
 	margin-bottom: 10px;
 }
 
-img {
-	display: block;
-	max-width: 100%;
+.container {
+	max-width: 960px;
+	margin-inline: auto;
+	padding-inline: 16px;
 }
 
 /**********************************/
@@ -88,8 +94,6 @@ img {
 	gap: 24px;
 	align-items: center;
 	justify-content: space-between;
-	max-width: 960px;
-	margin: 0 auto;
 	flex-wrap: wrap;
 }
 
@@ -179,8 +183,6 @@ img {
 	margin: 10px 0 5px 0;
 }
 
-
-
 /**********************************/
 /* 6. Planos
 /**********************************/
@@ -236,14 +238,14 @@ img {
 }
 
 .plano-lista__item {
-	margin: 10px 0; 
+	margin: 10px 0;
 	font-style: italic;
 	display: flex;
 	align-items: center;
 }
 
 .plano-lista__item::before {
-	content: '';
+	content: "";
 	display: block;
 	width: 5px;
 	height: 5px;
@@ -268,11 +270,13 @@ img {
 	background-color: var(--clr-green-light);
 }
 
-.plano:last-child, .plano:last-child .plano__btn-comprar {
+.plano:last-child,
+.plano:last-child .plano__btn-comprar {
 	border: 2px solid var(--clr-pink-dark);
 }
 
-.plano:last-child .plano-lista__item::before, .plano:last-child .plano__divisor {
+.plano:last-child .plano-lista__item::before,
+.plano:last-child .plano__divisor {
 	background-color: var(--clr-pink-dark);
 }
 
@@ -310,22 +314,22 @@ img {
 }
 
 .vantagem__titulo::before {
-	content: '';
+	content: "";
 	display: inline-block;
 	width: 10px;
 	height: 25px;
 	margin-right: 5px;
 }
 
-.vantagem:nth-of-type(3n+1) .vantagem__titulo::before {
+.vantagem:nth-of-type(3n + 1) .vantagem__titulo::before {
 	background-color: var(--clr-green-light);
 }
 
-.vantagem:nth-of-type(3n+2) .vantagem__titulo::before {
+.vantagem:nth-of-type(3n + 2) .vantagem__titulo::before {
 	background: var(--clr-pink-dark);
 }
 
-.vantagem:nth-of-type(3n+3) .vantagem__titulo::before {
+.vantagem:nth-of-type(3n + 3) .vantagem__titulo::before {
 	background: var(--clr-green-dark);
 }
 
@@ -354,7 +358,6 @@ img {
 	padding-left: 10px;
 	flex: 1 1 260px;
 }
-
 
 .newsletter-info__titulo {
 	font-size: 2.62rem;
@@ -397,7 +400,6 @@ img {
 	padding: 15px;
 }
 
-
 /**********************************/
 /* 9. Footer
 /**********************************/
@@ -410,7 +412,8 @@ img {
 	padding: 55px calc((100% - 960px) / 2);
 }
 
-.footer__copyright, .footer__logo {
+.footer__copyright,
+.footer__logo {
 	padding-left: 10px;
 	padding-right: 10px;
 }
