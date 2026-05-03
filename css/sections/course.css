@@ -1,5 +1,5 @@
 .course {
-	margin-top: 32px;
+	margin-top: var(--section-margin-top);
 }
 
 .course__header {
