@@ -4,16 +4,16 @@
 	--ff-primary: "Google Sans", "Nunito", Helvetica, Arial, sans-serif;
 
 	--clr-green-dark: hsl(144, 95%, 31%);
-	--clr-green-light: hsl(from var(--clr-green-dark) h s 51%);
+	--clr-green-light: hsl(144, 95%, 51%);
 	--clr-pink-dark: hsl(294, 95%, 51%);
-	--clr-pink-light: hsl(
-		from var(--clr-pink-dark) calc(h - 1) calc(s + 3%) calc(l + 30%)
-	);
-	--clr-white: hsl(0, 0%, 96%);
+	--clr-pink-light: hsl(295, 92%, 81%);
+	--clr-white: hsl(0, 0%, 95%);
 	--clr-black: hsl(0, 0%, 5%);
 	--clr-muted: hsl(0, 0%, 20%);
 
 	--shadow-md: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+	--section-margin-top: 32px;
 }
 
 html {
@@ -22,6 +22,7 @@ html {
 }
 
 body {
+	color: var(--clr-black);
 	background-color: var(--clr-white);
 	font-family: var(--ff-primary);
 }
