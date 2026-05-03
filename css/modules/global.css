@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+
+:root {
+	--ff-primary: "Google Sans", "Nunito", Helvetica, Arial, sans-serif;
+
+	--clr-green-dark: hsl(144, 95%, 31%);
+	--clr-green-light: hsl(from var(--clr-green-dark) h s 51%);
+	--clr-pink-dark: hsl(294, 95%, 51%);
+	--clr-pink-light: hsl(295, 92%, 81%);
+	--clr-white: hsl(0, 0%, 96%);
+	--clr-black: hsl(0, 0%, 5%);
+
+	--shadow-md: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--clr-white);
+	font-family: var(--ff-primary);
+}
+
+hr {
+	border: none;
+	background-color: var(--clr-pink-dark);
+	height: 2px;
+	width: 140px;
+	margin: 20px auto;
+}
