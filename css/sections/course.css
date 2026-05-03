@@ -41,3 +41,7 @@
 	text-align: center;
 	color: var(--clr-muted);
 }
+
+.course__line--final {
+	margin-top: 8px;
+}
