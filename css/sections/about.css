@@ -16,11 +16,6 @@
 	font-weight: 700;
 }
 
-.about__subtitle {
-	font-size: 1.8rem;
-	font-weight: 400;
-}
-
 .about__grid {
 	margin-top: 24px;
 	display: grid;
