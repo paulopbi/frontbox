@@ -1,5 +1,6 @@
 .newsletter {
 	padding-block: 24px;
+	background-color: var(--clr-green-light);
 }
 
 .newsletter__content {
