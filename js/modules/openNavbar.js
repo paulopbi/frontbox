@@ -8,7 +8,6 @@ export const openNavbar = () => {
 		};
 
 		mobileButton.addEventListener("click", handleClick);
+		return;
 	}
-
-	menuLinksContainer.classList.remove("active");
 };
